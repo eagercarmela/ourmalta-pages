@@ -8,99 +8,158 @@ import Footer from '../components/Footer.astro';
 <html lang="en">
 <head>
   <BaseHead
-    title="Get in touch"
+    title="Contact"
     description="Contact Our Malta"
   />
+
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      color: #222;
+      font-family: system-ui, sans-serif;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin: 0 0 1rem 0;
+    }
+
+    label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    select,
+    input {
+      width: 300px;
+      height: 44px;
+      padding: 8px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 150px;
+      padding: 8px;
+      font-size: 1rem;
+      line-height: 1.6;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+
+    .field {
+      margin-bottom: 1.2rem;
+    }
+
+    button {
+      background: white;
+      color: #333;
+      border: 1px solid #666;
+      border-radius: 4px;
+      padding: 8px 24px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #f5f5f5;
+    }
+  </style>
 </head>
 
 <body>
+
   <Header />
 
-  <main style="max-width:700px; margin:0 auto;">
+  <main>
 
-    <h1>Get in touch</h1>
-
-    <p style="font-size:20px; margin:6px 0;">
+    <p>
       Pause for a moment...
     </p>
 
-    <p style="font-size:20px; margin:6px 0;">
-      Imagine something uniquely Maltese. What comes to mind?
+    <p>
+      Imagine something uniquely Maltese.
     </p>
 
-    <p style="font-size:20px; margin:6px 0;">
+    <p>
+      What comes to mind?
+    </p>
+
+    <p>
       What experience, place, skill, or tradition deserves to be shared?
     </p>
 
-    <p style="font-size:20px; margin:6px 0;">
+    <p>
       Your perspective could inspire the next great experience in Malta.
     </p>
 
-    <p style="font-size:20px; margin:6px 0 16px 0;">
+    <p style="margin-bottom:2rem;">
       We're listening. Share your idea, ask a question, or simply start a conversation.
     </p>
 
     <form>
 
-      <p style="margin:10px 0;">
-        <label for="topic" style="font-size:16px;">What is this about?</label><br />
-        <select
-          id="topic"
-          name="topic"
-          style="width:300px; height:40px; font-size:16px; padding:6px;"
-        >
+      <div class="field">
+        <label for="topic">What is this about?</label>
+
+        <select id="topic" name="topic">
           <option>Ideas</option>
           <option>Questions</option>
           <option>General</option>
         </select>
-      </p>
+      </div>
 
-      <p style="margin:10px 0;">
-        <label for="name" style="font-size:16px;">Name</label><br />
+      <div class="field">
+        <label for="name">Name</label>
+
         <input
           id="name"
           type="text"
           name="name"
           required
-          style="width:300px; height:40px; font-size:16px; padding:6px;"
         />
-      </p>
+      </div>
 
-      <p style="margin:10px 0;">
-        <label for="email" style="font-size:16px;">Email</label><br />
+      <div class="field">
+        <label for="email">Email</label>
+
         <input
           id="email"
           type="email"
           name="email"
           required
-          style="width:300px; height:40px; font-size:16px; padding:6px;"
         />
-      </p>
+      </div>
 
-      <p style="margin:10px 0;">
-        <label for="message" style="font-size:16px;">Message</label><br />
+      <div class="field">
+        <label for="message">Message</label>
+
         <textarea
           id="message"
           name="message"
-          rows="5"
           required
-          style="width:100%; font-size:16px; padding:8px; resize:vertical;"
         ></textarea>
-      </p>
+      </div>
 
-      <p style="margin-top:12px;">
-        <button
-          type="submit"
-          style="font-size:16px; padding:8px 24px;"
-        >
-          Send
-        </button>
-      </p>
+      <button type="submit">
+        Send
+      </button>
 
     </form>
 
   </main>
 
   <Footer />
+
 </body>
 </html>

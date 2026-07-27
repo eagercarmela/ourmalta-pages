@@ -20,7 +20,7 @@ import Footer from '../components/Footer.astro';
 
     <h1>Get in touch</h1>
 
-    <p><strong>Pause for a moment...</strong></p>
+    <p>Pause for a moment...</p>
 
     <p>
       Imagine something uniquely Maltese. What comes to mind?
@@ -35,20 +35,19 @@ import Footer from '../components/Footer.astro';
     </p>
 
     <p>
-      <strong>We're listening.</strong>
-      Share your idea, ask a question, or simply start a conversation.
+      We're listening. Share your idea, ask a question, or simply start a conversation.
     </p>
 
     <hr />
 
     <form>
 
-      <p>
-        <label for="topic"><strong>What is this about?</strong></label><br /><br />
+      <p style="margin-bottom:12px;">
+        <label for="topic">What is this about?</label><br />
         <select
           id="topic"
           name="topic"
-          style="width:320px; padding:8px; font-size:16px;"
+          style="width:320px; padding:8px; font-size:16px; margin-top:6px;"
         >
           <option>Ideas</option>
           <option>Questions</option>
@@ -56,43 +55,43 @@ import Footer from '../components/Footer.astro';
         </select>
       </p>
 
-      <p>
-        <label for="name"><strong>Name</strong></label><br /><br />
+      <p style="margin-bottom:12px;">
+        <label for="name">Name</label><br />
         <input
           id="name"
           type="text"
           name="name"
           required
-          style="width:100%; max-width:600px; padding:10px; font-size:16px;"
+          style="width:420px; max-width:100%; padding:8px; font-size:16px; margin-top:6px;"
         />
       </p>
 
-      <p>
-        <label for="email"><strong>Email</strong></label><br /><br />
+      <p style="margin-bottom:12px;">
+        <label for="email">Email</label><br />
         <input
           id="email"
           type="email"
           name="email"
           required
-          style="width:100%; max-width:600px; padding:10px; font-size:16px;"
+          style="width:420px; max-width:100%; padding:8px; font-size:16px; margin-top:6px;"
         />
       </p>
 
-      <p>
-        <label for="message"><strong>Message</strong></label><br /><br />
+      <p style="margin-bottom:12px;">
+        <label for="message">Message</label><br />
         <textarea
           id="message"
           name="message"
-          rows="10"
+          rows="7"
           required
-          style="width:100%; max-width:700px; padding:10px; font-size:16px;"
+          style="width:700px; max-width:100%; padding:8px; font-size:16px; margin-top:6px;"
         ></textarea>
       </p>
 
       <p>
         <button
           type="submit"
-          style="padding:12px 28px; font-size:18px; cursor:pointer;"
+          style="padding:10px 24px; font-size:17px;"
         >
           Send
         </button>

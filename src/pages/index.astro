@@ -3,19 +3,80 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
+
 <!doctype html>
 <html lang="en">
 <head>
   <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      color: #222;
+      font-family: system-ui, sans-serif;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .hero-image {
+      display: block;
+      width: 100%;
+      max-width: 700px;
+      margin: 1.5rem auto 2rem;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 1.35rem;
+      margin-bottom: 2rem;
+      color: #444;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin-bottom: 1.7rem;
+    }
+
+    .closing {
+      margin-bottom: 0;
+    }
+
+    .signature {
+      margin-top: 0;
+      margin-bottom: 0.2rem;
+      font-family: "Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive;
+      font-size: 48px;
+      line-height: 1;
+    }
+
+    .email {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+  </style>
 </head>
+
 <body>
+
   <Header />
+
   <main>
-    <img src="/community.jpg" alt="Share your Malta community" />
 
-    <h1>SHARE YOUR MALTA</h1>
+    <img
+      class="hero-image"
+      src="/community.jpg"
+      alt="Share your Malta community"
+    />
 
-    <p>Creating opportunities through community.</p>
+    <p class="intro">
+      Creating opportunities through community.
+    </p>
 
     <p>
       What makes Malta special? Perhaps it's the people, the traditions, the stories,
@@ -49,12 +110,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       This may take time, but every community starts with one conversation—perhaps yours.
     </p>
 
-    <p>In anticipation,</p>
-    <p style="font-family:'Brush Script MT','Segoe Script','Lucida Handwriting',cursive; font-size:40px; margin-bottom:4px;">
+    <p class="closing">
+      In anticipation,
+    </p>
+
+    <p class="signature">
       Carmela
     </p>
 
-    <p style="margin-top:0;">
+    <p class="email">
       connect@ourmalta.org
     </p>
 

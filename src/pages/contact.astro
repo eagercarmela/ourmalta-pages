@@ -35,20 +35,48 @@ import Footer from '../components/Footer.astro';
     </p>
 
     <p>
-      <strong>We're listening.</strong> Share your idea, ask a question, or simply start a conversation.
+      <strong>We're listening.</strong>
+      Share your idea, ask a question, or simply start a conversation.
     </p>
 
     <hr />
 
-    <h2>What is this about?</h2>
+    <form>
 
-    <ul>
-      <li>💡 Suggestions &amp; Ideas</li>
-      <li>❓ Questions</li>
-      <li>🤝 General Contact</li>
-    </ul>
+      <p>
+        <label for="topic"><strong>What is this about?</strong></label><br />
+        <select id="topic" name="topic">
+          <option>Suggestions &amp; Ideas</option>
+          <option>Questions</option>
+          <option>General Contact</option>
+        </select>
+      </p>
 
-    <p><em>Contact form coming next…</em></p>
+      <p>
+        <label for="name"><strong>Name</strong></label><br />
+        <input id="name" type="text" name="name" required />
+      </p>
+
+      <p>
+        <label for="email"><strong>Email</strong></label><br />
+        <input id="email" type="email" name="email" required />
+      </p>
+
+      <p>
+        <label for="message"><strong>Message</strong></label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="8"
+          required
+        ></textarea>
+      </p>
+
+      <p>
+        <button type="submit">Send</button>
+      </p>
+
+    </form>
 
   </main>
 

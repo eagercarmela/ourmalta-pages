@@ -16,36 +16,38 @@ import Footer from '../components/Footer.astro';
 <body>
   <Header />
 
-  <main style="max-width:700px;margin:0 auto;font-size:20px;line-height:1.2;">
+  <main style="max-width:700px;margin:0 auto;">
 
-    <h1 style="font-size:24px;margin:0 0 10px 0;">Get in touch</h1>
+    <h1 style="font-size:30px;margin:0 0 12px 0;">GET IN TOUCH</h1>
 
-    <p style="margin:4px 0;">Pause for a moment...</p>
+    <p style="font-size:20px;margin:6px 0;">
+      Pause for a moment...
+    </p>
 
-    <p style="margin:4px 0;">
+    <p style="font-size:20px;margin:6px 0;">
       Imagine something uniquely Maltese. What comes to mind?
     </p>
 
-    <p style="margin:4px 0;">
+    <p style="font-size:20px;margin:6px 0;">
       What experience, place, skill, or tradition deserves to be shared?
     </p>
 
-    <p style="margin:4px 0;">
+    <p style="font-size:20px;margin:6px 0;">
       Your perspective could inspire the next great experience in Malta.
     </p>
 
-    <p style="margin:4px 0 10px 0;">
+    <p style="font-size:20px;margin:6px 0 14px 0;">
       We're listening. Share your idea, ask a question, or simply start a conversation.
     </p>
 
     <form>
 
-      <p style="margin:6px 0;">
-        <label for="topic">What is this about?</label><br />
+      <p style="margin:10px 0;">
+        <label for="topic" style="font-size:16px;">What is this about?</label><br />
         <select
           id="topic"
           name="topic"
-          style="width:260px;height:28px;font-size:12px;"
+          style="width:280px;height:38px;font-size:16px;"
         >
           <option>Ideas</option>
           <option>Questions</option>
@@ -53,43 +55,43 @@ import Footer from '../components/Footer.astro';
         </select>
       </p>
 
-      <p style="margin:6px 0;">
-        <label for="name">Name</label><br />
+      <p style="margin:10px 0;">
+        <label for="name" style="font-size:16px;">Name</label><br />
         <input
           id="name"
           type="text"
           name="name"
           required
-          style="width:260px;height:28px;font-size:12px;padding:4px;"
+          style="width:280px;height:38px;font-size:16px;padding:6px;"
         />
       </p>
 
-      <p style="margin:6px 0;">
-        <label for="email">Email</label><br />
+      <p style="margin:10px 0;">
+        <label for="email" style="font-size:16px;">Email</label><br />
         <input
           id="email"
           type="email"
           name="email"
           required
-          style="width:260px;height:28px;font-size:12px;padding:4px;"
+          style="width:280px;height:38px;font-size:16px;padding:6px;"
         />
       </p>
 
-      <p style="margin:6px 0;">
-        <label for="message">Message</label><br />
+      <p style="margin:10px 0;">
+        <label for="message" style="font-size:16px;">Message</label><br />
         <textarea
           id="message"
           name="message"
           rows="5"
           required
-          style="width:100%;font-size:12px;padding:6px;resize:vertical;"
+          style="width:100%;font-size:16px;padding:8px;resize:vertical;"
         ></textarea>
       </p>
 
-      <p style="margin-top:8px;">
+      <p style="margin-top:12px;">
         <button
           type="submit"
-          style="font-size:20px;padding:6px 18px;"
+          style="font-size:16px;padding:8px 24px;"
         >
           Send
         </button>
@@ -102,4 +104,3 @@ import Footer from '../components/Footer.astro';
   <Footer />
 </body>
 </html>
-

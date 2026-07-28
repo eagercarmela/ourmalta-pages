@@ -47,7 +47,9 @@ import Header from '../components/Header.astro';
     </p>
 
     <p class="email">
-      contact@ourmalta.org
+      <a href="mailto:contact@ourmalta.org">
+        contact@ourmalta.org
+      </a>
     </p>
 
     <p class="note">
@@ -81,8 +83,17 @@ import Header from '../components/Header.astro';
     margin-bottom: 0.5rem;
   }
 
+  .email a {
+    color: #1F3A5F;
+    text-decoration: none;
+  }
+
+  .email a:hover {
+    text-decoration: underline;
+  }
+
   .note {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-style: italic;
     margin-top: 0;
   }

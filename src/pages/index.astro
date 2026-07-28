@@ -7,59 +7,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <!doctype html>
 <html lang="en">
 <head>
-  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-
-  <style>
-    body {
-      margin: 0;
-      background: white;
-      color: #222;
-      font-family: system-ui, sans-serif;
-    }
-
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem 4rem;
-    }
-
-    .hero-image {
-      display: block;
-      width: 100%;
-      max-width: 700px;
-      margin: 1.5rem auto 2rem;
-    }
-
-    .intro {
-      text-align: center;
-      font-size: 1.35rem;
-      margin-bottom: 2rem;
-      color: #444;
-    }
-
-    p {
-      font-size: 1.15rem;
-      line-height: 1.8;
-      margin-bottom: 1.7rem;
-    }
-
-    .closing {
-      margin-bottom: 0;
-    }
-
-    .signature {
-      margin-top: 0;
-      margin-bottom: 0.2rem;
-      font-family: "Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive;
-      font-size: 48px;
-      line-height: 1;
-    }
-
-    .email {
-      margin-top: 0;
-      font-size: 1.1rem;
-    }
-  </style>
+  <BaseHead
+    title={SITE_TITLE}
+    description={SITE_DESCRIPTION}
+  />
 </head>
 
 <body>
@@ -67,12 +18,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   <Header />
 
   <main>
-
-    <img
-      class="hero-image"
-      src="/community.jpg"
-      alt="Share your Malta community"
-    />
 
     <p class="intro">
       Creating opportunities through community.
@@ -94,7 +39,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
     <p>
       Everyone belongs, contributes and benefits. Want to help build something new?
-      This is just the beginning, just sharing of ideas. The goal is creating
+      This is just the beginning, just sharing ideas. The goal is creating
       friendships, opportunities, and experiences that benefit everyone.
     </p>
 
@@ -110,19 +55,61 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       This may take time, but every community starts with one conversation—perhaps yours.
     </p>
 
-    <p class="closing">
-      In anticipation,
-    </p>
-
-    <p class="signature">
-      Carmela
-    </p>
+    <img
+      src="/signature.png"
+      alt="Carmela's signature"
+      class="signature"
+    />
 
     <p class="email">
-      connect@ourmalta.org
+      contact@ourmalta.org
     </p>
 
   </main>
 
 </body>
+
+<style>
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  .intro {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.55rem;
+    line-height: 1.7;
+    color: #1F3A5F;
+    margin: 0 0 2.5rem 0;
+  }
+
+  p {
+    color: #1F3A5F;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .signature {
+    display: block;
+    margin: 2.5rem auto 0.35rem;
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+  }
+
+  .email {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.15rem;
+    color: #1F3A5F;
+    margin: 0;
+  }
+
+</style>
+
 </html>

@@ -1,7 +1,7 @@
 <header>
-  <div class="logo">
-    <a href="/">OUR MALTA</a>
-  </div>
+  <a href="/" class="logo">
+    <img src="/logo.png" alt="Our Malta" />
+  </a>
 
   <nav>
     <a href="/">Home</a>
@@ -10,41 +10,75 @@
 </header>
 
 <style>
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: white;
-  padding: 12px 24px;
-  border-bottom: 1px solid #ddd;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
-.logo a {
-  text-decoration: none;
-  color: #222;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
+  :global(body) {
+    margin: 0;
+    background: white;
+    color: #1F3A5F;
+    font-family: "Cormorant Garamond", serif;
+  }
 
-nav {
-  display: flex;
-  gap: 12px;
-}
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 32px;
+    background: white;
+    border-bottom: 1px solid #e6e6e6;
+  }
 
-nav a {
-  display: inline-block;
-  padding: 8px 24px;
-  border: 1px solid #666;
-  border-radius: 4px;
-  background: white;
-  color: #333;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.2s ease;
-}
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
 
-nav a:hover {
-  background: #f5f5f5;
-}
+  .logo img {
+    height: 84px;
+    width: auto;
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    gap: 14px;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 8px 24px;
+    border: 1px solid #1F3A5F;
+    border-radius: 4px;
+    background: white;
+    color: #1F3A5F;
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+
+  nav a:hover {
+    background: #f4f7fb;
+  }
+
+  @media (max-width: 700px) {
+    header {
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px 18px;
+    }
+
+    .logo img {
+      height: 70px;
+    }
+
+    nav {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
 </style>
